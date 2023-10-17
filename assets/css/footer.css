@@ -1,0 +1,31 @@
+footer{
+    background-color:#0C70B8;
+    display: flex;
+    justify-content: space-around;
+    padding: 3em 0;
+}
+
+.footer-informacoes{
+    width: 50%;
+}
+
+.footer-lista{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2em;
+}
+
+.footer-informacoes p, a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (max-width:913px){
+    .footer-lista{
+        display: none;
+    }
+
+    .footer-informacoes p{
+        justify-content: center;
+    }
+}

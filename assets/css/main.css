@@ -18,6 +18,7 @@ body {
   color: #888;
   overflow-x: hidden;
   font-size: 15px;
+  overflow-x: hidden;
 }
 
 p {
@@ -2019,12 +2020,17 @@ ol {
 ========================================*/
 .hero-area {
   position: relative;
+  z-index: 0;
   padding: 80px 0 0px 0;
   background: #095A94;
   background-image: url(https://i.postimg.cc/zB1J68SY/TEXTURA.png);
   background-size: auto;
   height: 90vh; 
   
+}
+
+.hero-image{
+  display: flex;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2339,6 +2345,9 @@ ol {
   line-height: 22px;
 }
 
+.features-background-helix{
+  position: absolute;
+}
 /*======================================
     Features Card CSS
 ========================================*/
@@ -2522,71 +2531,53 @@ ol {
 	criação e produçao CSS
 ===============================*/
 
-
-
-#customContents .customContainer {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  height: 600px;
-}
-
-#customContents h3 {
-  display: flex; /* Transformando o h3 em um container flexível */
-  align-items: center; /* Alinhando os itens ao centro verticalmente */
-}
-
-#customContents .customRow {
+.informacoes{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start; /* Alinha o início do conteúdo de cada coluna */
-  margin-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
 }
 
-#customContents .customCol-12 {
-  padding: 15px;
+.informacoes p{
+  font-size: 20px;
+  font-weight: 300;
+  max-width: 60ch;
 }
 
-#customContents .customSection-title h3 {
-  font-size: x-large;
-  color: #0B68AB;
-  margin-bottom: 15px;
-  justify-content: center;/* Alinhamento do texto ao centro */
+.informacoes__texto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#customContents .customSection-title h2 {
-  font-size: medium;
-  color: gray;
-  line-height: 1.5; /* Alinhamento do texto ao centro */
-  margin-bottom: 30px;
+.conteudos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5em 0;
 }
 
-#customContents .customSeparator {
-  border: 4px solid #095A94; /* Removendo a borda padrão */
-  border-top: 2px solid #095A94; /* Adicionando uma borda superior azul */
-  width: 130%; /* Fazendo a linha ocupar toda a largura */
-  margin: 0; /* Removendo margens */
-  margin-left: 15px;
+.informacoes__texto h2{
+  color: #0C70B8;
 }
 
-#customContents .displaySection h3 {
-  color: #AFCA15; /* Mudando a cor para vermelho */
+.totem-and-list{
+  display: flex;
+  align-items: center;
 }
 
-.separatorWrapper {
-  flex-grow: 1; /* Permitindo que o wrapper da linha cresça e ocupe o espaço restante */
-  margin-left: 10px; /* Adicionando uma margem à esquerda para separar do título */
-}
+.totem-img{
+  max-height: 20em;
+  margin: 0 5em;
 
-#customContents .customList {
+}
+.customList {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  padding-bottom: 2em;
 }
 
-#customContents .customListItem {
-  color: #0B68AB;
+.customListItem {
   display: flex;
   align-items: center;
 }
@@ -2596,21 +2587,36 @@ ol {
   margin: 1em 1em;
 }
 
-#customContents .customImagePlaceholder {
-  flex-basis: 50%; /* Ajuste conforme necessário */
+.h2-bar{
+  display: flex;
+  align-items: center;
+  margin-bottom: ;
 }
 
-#customContents .customImagePlaceholder img {
-  max-width: 100%;
-  height: auto;
+.h2-bar h2{
+  color: #AFCA15;
+  font-size: 32px;
 }
 
-.contentSection {
-  flex-basis: 100%; /* Para ocupar toda a largura na seção de conteúdo */
+.customSeparator {
+  border: 4px solid #095A94; /* Removendo a borda padrão */
+  border-top: 2px solid #095A94; /* Adicionando uma borda superior azul */
+  width: 130%; /* Fazendo a linha ocupar toda a largura */
+  margin: 0; /* Removendo margens */
+  margin-left: 15px;
 }
 
-.displaySection .customCol-12 {
-  flex-basis: 50%; /* Para dividir espaço com a imagem na seção de displays */
+.separatorWrapper {
+  flex-grow: 1; /* Permitindo que o wrapper da linha cresça e ocupe o espaço restante */
+  margin-left: 10px; /* Adicionando uma margem à esquerda para separar do título */
+}
+
+
+@media screen and (max-width:1000px){
+  .customSeparator{
+    display: none;
+  }
+  
 }
 
 /*=============================
@@ -2639,6 +2645,13 @@ ol {
   align-items: center;
   flex-wrap: wrap; /* Isso permite que os cards se ajustem em várias linhas se não houver espaço suficiente */
   
+}
+
+@media screen and (max-width: 600px){
+  .card-container-3 .card{
+    flex-wrap: nowrap;
+    width: 15em;
+  }
 }
 
 #pricing .card {
@@ -3303,14 +3316,19 @@ margin-bottom: 15px;
   background-color: #fff;
 }
 
-
-#customContents{
-  height: 76vh;
-  margin: 2em;
+.background-helix{
+  position: absolute;
+  width: 300px;
+  height: 300px;
 }
 
-.totem{ 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.helix-right{
+  right: -100px;
+  top: 1;
+  z-index: -1;
+}
+
+.helix-left{
+  left: -150px;
+  bottom: -500px;
 }

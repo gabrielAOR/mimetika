@@ -2386,87 +2386,136 @@ ol {
 }
 
 /*======================================
-    Hero Area CSS
+    Card Area CSS
 ========================================*/
-.background {
-  background: url('sua-imagem-de-fundo.jpg') no-repeat center center fixed;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70vh;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+
+.card-area {
   position: relative;
+  padding: 20px 0 0px 0;
+  background: #095A94;
+  background-image: url(https://i.postimg.cc/zB1J68SY/TEXTURA.png);
+  background-size: auto;
+  height: 120vh;
 }
 
-.hero-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Centraliza os cards horizontalmente */
-  overflow: hidden;
-  width: 780px; /* Largura suficiente para 3 cards */
-  margin: 0 auto;
-  gap: 10px; /* Espaço entre os cards */
-}
-
-.card {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-  padding: 20px;
-  width: 250px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-}
-
-.icon {
-  width: 50px;
-  height: 50px;
-}
-
-.title {
-  font-size: 24px;
-  margin: 0;
-}
-
-.text {
-  font-size: 16px;
-  margin: 0;
-}
-
-button {
-  background-color: rgba(255, 255, 255, 0.2);
+.main-title {
+  position: absolute;
+  top: 5%;
+  left: 20%; /* Ajustado para mover o título para a esquerda */
   color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  font-size: 2em;
+  z-index: 1; /* Garante que o título apareça em cima */
+}
+
+.nav-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  background: #4e88b2; 
+  border: none;
+  color: white; 
+  font-size: 1.5em;
+  cursor: pointer;
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; /* Garante que os botões apareçam em cima */
 }
 
-#prevBtn {
-  left: 10px;
-  margin-left: 40px;
+.left-btn {
+  left: 5%;
 }
 
-#nextBtn {
-  right: 10px;
-  margin-right: 40px;
+.right-btn {
+  right: 5%;
 }
 
-button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+.nav-btn:hover {
+  background: #377a95; /* Uma cor ligeiramente mais escura para o hover */
+}
+
+.nav-btn:disabled {
+  opacity: 0.5; /* torna o botão mais opaco quando desativado */
+  cursor: not-allowed; /* altera o cursor para indicar que o botão está desativado */
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+.cards-container.fading-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+.cards-container.fading-in {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 900px;  /* Valor aproximado, ajuste conforme a necessidade */
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.card {
+  width: 250px; /* Ajustado a largura */
+  height: 320px; /* Adicionado para controlar a altura */
+  margin: 10px 1%; 
+  background-color: #4e88b2; /* Cor do card ajustada */
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home .card img {
+  width: 30%; 
+  margin-bottom: 1em;
+}
+
+
+.card h2 {
+  margin-bottom: 0.5em;
+  color: #AFCA15;
+  font-size: medium;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: white;
 }
 
 /*=============================

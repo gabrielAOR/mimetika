@@ -1,5 +1,9 @@
 footer{
     background-color:#0C70B8;
+}
+
+
+.footer-inside{
     display: flex;
     justify-content: space-around;
     padding: 3em 0;

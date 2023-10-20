@@ -23,77 +23,28 @@
 <body>
 
     <!-- Start Header Area -->
-    <header class="header navbar-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="nav-inner">
-                        <!-- Start Navbar -->
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="assets\images\logo\logo.png" alt="Logo">
-                            </a>
-                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                <ul id="nav" class="navbar-nav ms-auto">
-                                    <li class="nav-item">
-                                        <a href="#home" class="page-scroll active"
-                                            aria-label="Toggle navigation">Quem somos</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#features" class="page-scroll"
-                                            aria-label="Toggle navigation">Conteúdos</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="javascript:void(0)" aria-label="Toggle navigation">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="javascript:void(0)" aria-label="Toggle navigation">Nosso sistema</a>
-                                    </li>
-
-                                </ul>
-                            </div> <!-- navbar collapse -->
-                            <div class="button add-list-button">
-                                <a href="javascript:void(0)" class="btn">Criação</a>
-                            </div>
-                        </nav>
-                        <!-- End Navbar -->
-                    </div>
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+    <header class="header-mimetika">
+        <img src="assets/images/logo.svg" alt="Logo da marca mimatika" class="nav__imagem">
+            <nav>
+                <ul class="nav__list">
+                    <li class="list__item"><a href="#features">Quem somos</a></li>
+                    <li class="list__item"><a href="#conteudos">Conteúdos</a></li>
+                    <li class="list__item"><a href="#pricing">Blog</a></li>
+                </ul>
+            </nav>
+        <a href="#" id="header-botao">Criação</a>
     </header>
     <!-- End Header Area -->
 
     <!-- Start Hero Area -->
-    <section id="home" class="hero-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="hero-content">
-                        <h1 class="wow fadeInLeft" data-wow-delay=".4s">Uma <div style="display: inline; color: #AFCA15;">comunicação</div> sob medida para qualquer tamanho de empresa.</h1>
-                        <div class="button wow fadeInLeft" data-wow-delay=".8s">
-                            <a href="javascript:void(0)" class="btn btn-alt">
-                                Fale conosco</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="hero-image wow fadeInRight" data-wow-delay=".4s">
-                        <div class="hero-area-tv"><img class="foto" src="assets\images\televisao.png" alt="#"></div>
-                    </div>
-            
-                    <div class="circle-top"></div>
-                    <div class="circle-bottom"></div>
-            
-                </div>
-            </div>
+    <section class="hero-area">
+        <div class="hero-area-text">
+            <h2 class="hero-area-h2">Uma <span style="color: #AFCA15">comunicação</span> sob medida para qualquer tamanho de empresa.</h2>
+            <a href="#" class="btn-fale-conosco">Fale Conosco</a>
+        </div>
+        <div class="totem-and-tv">
+            <img src="assets/images/tv.svg" alt="#" class="tv-hero-img">
+            <img src="assets/images/totem-hero.svg" alt="#" class="totem-hero-img">
         </div>
     </section>
     <!-- End Hero Area -->
@@ -189,26 +140,28 @@
     <!-- End Cards Area --> 
 
 
-    <section class="informacoes">
-        <img src="assets/images/blue-helix.svg" alt="" class="background-helix helix-left">
-        <img src="assets/images/blue-helix.svg" alt="" class="background-helix helix-right">
-        <div class="informacoes__texto">
-            <div class="conteudos">
-                <h2>Conteúdos</h2>
-            <p> Você escolhe o conteúdo de acordo com seu público, horário de pico e tipos de mensagens. São canais de notícias do Brasil e do mundo atualizados online, direto dos sites que possuem a tecnologia RSS. Exemplos: Horóscopo, clima/tempo das maiores cidades do país e do mundo atualizados em tempo real; Resultados da loteria; esportes e muito mais. É só montar a sua programação e inserir suas mensagens entre as notícias. </p>
-            </div>
-        <div class="totem-and-list">
-            <div class="customList">
-                <div class="h2-bar">
-                    <h2>Instalação dos displays</h2>
-                    <span class="separatorWrapper"><hr class="customSeparator"></span>
+    <section>
+        <div class="container informacoes" id="conteudos">
+            <img src="assets/images/blue-helix.svg" alt="" class="background-helix helix-left">
+            <img src="assets/images/blue-helix.svg" alt="" class="background-helix helix-right">
+            <div class="informacoes__texto">
+                <div class="conteudos">
+                    <h2>Conteúdos</h2>
+                    <p> Você escolhe o conteúdo de acordo com seu público, horário de pico e tipos de mensagens. São canais de notícias do Brasil e do mundo atualizados online, direto dos sites que possuem a tecnologia RSS. Exemplos: Horóscopo, clima/tempo das maiores cidades do país e do mundo atualizados em tempo real; Resultados da loteria; esportes e muito mais. É só montar a sua programação e inserir suas mensagens entre as notícias. </p>
                 </div>
-                <div class="customListItem"><img src="assets/images/check-mark.svg" alt=""> <p>Vitrine Digital / TV Corporativa / SUPERMERCADOS</p></div>
-                <div class="customListItem"><img src="assets/images/check-mark.svg" alt=""> <p>Pontos de venda / Menu Board / Vídeos Board / Video Wall</p></div>
-                <div class="customListItem"><img src="assets/images/check-mark.svg" alt=""> <p>Redes de Mídia / Franquias / Recepções / Quiosques / Hotéis</p></div>
-                <div class="customListItem"><img src="assets/images/check-mark.svg" alt=""> <p>Academias / Elevadores / Ônibus / Restaurantes / Universidades</p></div>
+            <div class="totem-and-list">
+                <div class="customList">
+                    <div class="h2-bar">
+                        <h2>Instalação dos displays</h2>
+                        <span class="separatorWrapper"><hr class="customSeparator"></span>
+                    </div>
+                    <div class="customListItem"><img src="assets/images/check-mark.svg" alt=""> <p>Vitrine Digital / TV Corporativa / SUPERMERCADOS</p></div>
+                    <div class="customListItem"><img src="assets/images/check-mark.svg" alt=""> <p>Pontos de venda / Menu Board / Vídeos Board / Video Wall</p></div>
+                    <div class="customListItem"><img src="assets/images/check-mark.svg" alt=""> <p>Redes de Mídia / Franquias / Recepções / Quiosques / Hotéis</p></div>
+                    <div class="customListItem"><img src="assets/images/check-mark.svg" alt=""> <p>Academias / Elevadores / Ônibus / Restaurantes / Universidades</p></div>
+                </div>
+                <img src="assets/images/totem-conteudo.svg" alt="" class="totem-img">
             </div>
-            <img src="assets/images/totem.svg" alt="" class="totem-img">
         </div>
     </section>
 
@@ -281,18 +234,20 @@
     
     
     <footer>
-        <img src="assets/images/logo/logo-footer.svg" alt="">
-        <div class="footer-informacoes">
-            <ul class="footer-lista">
-                <li><a href="#" class="footer-ancora">Quem somos</a></li>
-                <li><a href="#" class="footer-ancora">Alimentação natural</a></li>
-                <li><a href="#" class="footer-ancora">Beneficios</a></li>
-                <li><a href="#" class="footer-ancora">Cardápio</a></li>
-                <li><a href="#" class="footer-ancora">Planos</a></li>
-            </ul>
+        <div class="container footer-inside">
+            <img src="assets/images/logo/logo-footer.svg" alt="">
+            <div class="footer-informacoes">
+                <ul class="footer-lista">
+                    <li><a href="#" class="footer-ancora">Quem somos</a></li>
+                    <li><a href="#" class="footer-ancora">Alimentação natural</a></li>
+                    <li><a href="#" class="footer-ancora">Beneficios</a></li>
+                    <li><a href="#" class="footer-ancora">Cardápio</a></li>
+                    <li><a href="#" class="footer-ancora">Planos</a></li>
+                </ul>
 
-            <p><b>Telefone:</b> 81 4042-5630</p>
-            <p><b>Email:</b> Contato@vaccinepet.com.br</p>    
+                <p><b>Telefone:</b> 81 4042-5630</p>
+                <p><b>Email:</b> Contato@vaccinepet.com.br</p>    
+            </div>
         </div>
     </footer>
     <!--/ End Footer Area -->

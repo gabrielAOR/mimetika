@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url(footer.css);
 @import url(hero-area.css);
+@import url(features-area.css);
 @import url(header.css);
 
 html {
@@ -2348,51 +2349,6 @@ ol {
 
 .features-background-helix{
   position: absolute;
-}
-/*======================================
-    Features Card CSS
-========================================*/
-.features .background-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.features .card-container-2 {
-  display: flex;
-  overflow: hidden;
-  width: 900px; /* 3 cards de 250px cada + 10px de margem entre eles */
-  margin: 0 auto; /* Centraliza o container de cards */
-}
-
-.features .card {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-  padding: 20px;
-  width: 250px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  margin: 0 20px; /* Margem entre os cards */
-}
-
-.features .icon {
-  width: 50px;
-  height: 50px;
-}
-
-.features .title {
-  font-size: 24px;
-  margin: 0;
-}
-
-.features .text {
-  font-size: 16px;
-  margin: 0;
 }
 
 /*======================================
